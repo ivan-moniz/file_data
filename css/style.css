@@ -85,6 +85,9 @@ h3 {
 }
 
 .space {
+
+  display: flex;
+  justify-content: space-around;
   padding: .9rem;
 
 }
