@@ -257,12 +257,30 @@ span {
     align-items: center;
     margin-top:  5rem;
   }
+  .gigs {
+    background: #fff; 
+  }
+  .gigs::after {
+    display: none;
 
+  }
   .space {
     display: flex;
     justify-content: space-between;
     position: relative;
-    top: -90%;
+    top: -85%;
+    left: 30%;
+  }
+  .zero {
+    position: absolute;
+    left: 5%;
+  }
+  .thousand {
+    position: absolute;
+    left: 30%;
+  }
+  hr::before {
+    left: 68%;
   }
 
 
@@ -297,8 +315,9 @@ span {
 
     transform: translateY(-100%);
     top:-70%;
-    left: 5%;
+    left: 10%;
     position: relative;
+   
 
 
   }
