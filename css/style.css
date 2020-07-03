@@ -102,6 +102,7 @@ h3 {
 .space .thousand {
   margin-right: -3rem;
 }
+/* styling the hr  */
 hr {
     width: 400px;
     margin: .9rem 0 0 2rem;
@@ -113,6 +114,7 @@ hr {
 
 }
 
+/* Filling the space size with after pseudo-class */ 
 hr::after {
     position: absolute;
     content: '';
@@ -121,12 +123,21 @@ hr::after {
     height: 10px;
     border-radius: 2rem;
     background: linear-gradient(to right, hsl(6, 100%, 80%),  hsl(335, 100%, 65%));
-    top: 38%;
+    top: 41%;
     right: 33%;
     border: 3px var(--VeryDarkBlue) solid;
 
 }
-
+hr::before {
+  position: absolute;
+  content: '';
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: white;
+  z-index: 2;
+  left: 65%;
+}
 span {
     font-weight: bolder;
 }
@@ -136,7 +147,7 @@ span {
     left: 27%;
     top: 10%;
     transform: translate(100%);
-    background: #eee;
+    background: #fff;
     color: #000;
     text-transform: uppercase;
     width: 30%;
@@ -145,6 +156,7 @@ span {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     align-items: center;
+    border-bottom: 4px solid white;
 }
 
 .span {
@@ -162,9 +174,21 @@ span {
     font-size: 2rem;
 }
 
-.hover {
+.square-box {
     transform: translateY(-50%);
     width: 100%;
+}
+.gigs::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: solid 20px white ;
+  border-left: solid 20px transparent;
+  position: absolute;
+  right: 0px;
+  z-index: 2;
+  bottom: -20px;
+
 }
 
 
